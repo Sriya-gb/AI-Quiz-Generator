@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 
 app = FastAPI()
 
-# ✅ Load model from local directory instead of downloading
+
 MODEL_PATH = "./mcq_model"
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_PATH)
