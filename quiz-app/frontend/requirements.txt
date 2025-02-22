@@ -1,0 +1,6 @@
+streamlit==1.22.0
+fastapi==0.95.2
+uvicorn==0.22.0
+spacy==3.5.3
+transformers==4.29.2
+torch==2.0.1
