@@ -31,27 +31,10 @@ This project is designed for educators, students.
 
 ---
 
-## **Setup & Installation**  
 
-### **1. Clone the Repository**  
-```bash
-git clone https://github.com/YOUR_USERNAME/AI-Quiz-Generator.git
-cd AI-Quiz-Generator
-```
 
-### **2. Install Dependencies**  
-```bash
-pip install -r requirements.txt
-```
 
-### **3. Run the FastAPI Backend**  
-```bash
-uvicorn api.endpoints:app --host 0.0.0.0 --port 8000 --reload
-```
 
-### **4. Run the Streamlit UI**  
-```bash
-streamlit run app/main.py
 
 ``
 
