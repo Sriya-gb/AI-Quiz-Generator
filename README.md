@@ -6,7 +6,7 @@ The AI-Powered Quiz Generator is a tool that automatically generates multiple-ch
 - One correct answer  
 - Three incorrect but plausible distractors  
 
-This project is designed for educators, students, and e-learning platforms to streamline quiz creation.  
+This project is designed for educators, students.  
 
 ---
 
@@ -52,34 +52,6 @@ uvicorn api.endpoints:app --host 0.0.0.0 --port 8000 --reload
 ### **4. Run the Streamlit UI**  
 ```bash
 streamlit run app/main.py
-```
 
-### **5. Access the Web App**  
-Go to: [http://localhost:8501](http://localhost:8501)
-
----
-
-## **API Usage**  
-The API can be used to generate MCQs programmatically.  
-
-### **API Request Example**  
-```bash
-curl -X POST "https://your-huggingface-space-url.com/generate-mcq/" \
-  -H "Content-Type: application/json" \
-  -d '{"text": "Albert Einstein developed the theory of relativity.", "num_questions": 5}'
-```
-
-### **Expected API Response**  
-```json
-{
-  "mcqs": [
-    {
-      "question": "What scientific theory did Albert Einstein develop?",
-      "options": ["A.Quantum Mechanics", "B.Newton's Laws", "C.Theory of Relativity", "D.Thermodynamics"],
-      "correct_answer": "C"
-    }
-  ]
-}
-```
-
+``
 
