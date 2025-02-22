@@ -14,9 +14,7 @@ This project is designed for educators, students, and e-learning platforms to st
 - Automatic MCQ generation from any text input  
 - AI-powered distractor selection to ensure meaningful incorrect answers  
 - Simple UI using Streamlit for easy interaction  
-- FastAPI backend for handling model inference  
-- Download quizzes in CSV/PDF format for offline use  
-- Deployed on Hugging Face Spaces for online access  
+- FastAPI backend for handling model inference   
 
 ---
 
@@ -24,35 +22,12 @@ This project is designed for educators, students, and e-learning platforms to st
 
 ### **Libraries & Models**  
 - Hugging Face Transformers – Pretrained models for text generation  
-- spaCy & NLTK – Named Entity Recognition (NER) for key topic extraction  
-- LangChain – AI-driven NLP pipelines  
-- OpenAI API (GPT-3.5) – (Optional) for high-quality question generation  
 - PyTorch/TensorFlow – Model fine-tuning and inference  
 
 ### **Frameworks**  
 - Streamlit – UI for quiz generation  
 - FastAPI – Backend for AI model inference  
-- Hugging Face Spaces – Deployment  
-
-### **Datasets**  
-- Kaggle, Hugging Face Hub, UCI ML Repository – For training and fine-tuning models  
-
----
-
-## **Project Structure**  
-```
-AI-Quiz-Generator/
-│── app/
-│   ├── main.py             # Streamlit UI
-│── api/
-│   ├── endpoints.py        # FastAPI backend
-│── quiz_generator.py       # MCQ generation logic
-│── model/
-│   ├── trained_model/      # Custom trained model (if applicable)
-│── requirements.txt        # Dependencies
-│── Dockerfile              # Deployment setup
-│── README.md               # Project documentation
-```
+- Hugging Face Spaces
 
 ---
 
@@ -107,22 +82,4 @@ curl -X POST "https://your-huggingface-space-url.com/generate-mcq/" \
 }
 ```
 
----
 
-## **Evaluation Criteria**  
-### **How the Project is Evaluated**  
-1. **Functionality** - Does the project generate relevant MCQs?  
-2. **Code Quality** - Is the code well-structured and documented?  
-3. **GenAI Integration** - Effective use of GPT/T5 for AI-generated quizzes.  
-4. **Creativity** - Unique approach to solving MCQ generation.  
-5. **Scalability** - Can handle large text inputs and be expanded for different subjects.  
-
----
-
-## **Future Enhancements**  
-- Multilingual Quiz Generation  
-- Speech-to-Text Integration for voice-based quiz input  
-- Deploy as a Chrome Extension or Mobile App  
-- Adaptive Learning Quizzes that adjust difficulty based on user responses  
-
----
