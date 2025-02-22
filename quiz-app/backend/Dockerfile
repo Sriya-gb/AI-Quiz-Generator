@@ -7,10 +7,10 @@ WORKDIR /app
 # Copy project files
 COPY . .
 
-# ✅ Create a writable cache directory
+#  Create a writable cache directory
 RUN mkdir -p /app/cache
 
-# ✅ Set environment variables
+#  Set environment variables
 ENV TRANSFORMERS_CACHE="/app/cache"
 ENV HF_HOME="/app/cache"
 
